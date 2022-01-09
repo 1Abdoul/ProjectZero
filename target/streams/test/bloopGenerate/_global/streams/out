@@ -1,0 +1,4 @@
+[debug] [csgradebook-test] Classpath dependencies List()
+[debug] [csgradebook-test] Dependencies from configurations List(csgradebook)
+[debug] Bloop wrote the configuration of project 'csgradebook-test' to 'C:\Users\king\Desktop\BigDataModule\LocalGit01\CSGradeBook\.bloop\csgradebook-test.json'
+[success] Generated .bloop\csgradebook-test.json

@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\king\Desktop\BigDataModule\LocalGit01\CSGradeBook\src\main\scala\CSgradeBook.scala:30:20: not found: type Scanner[0m
+[0m[[0m[31merror[0m] [0m[0m      var sc = new Scanner(System.in)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

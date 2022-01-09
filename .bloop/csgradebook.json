@@ -1,0 +1,190 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "csgradebook",
+        "directory": "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook",
+        "workspaceDir": "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook",
+        "sources": [
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\src\\main\\scala",
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\src\\main\\scala-2.11",
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\src\\main\\scala-2",
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\src\\main\\java",
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\target\\scala-2.11\\src_managed\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12.jar",
+            "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\mysql\\mysql-connector-java\\8.0.27\\mysql-connector-java-8.0.27.jar",
+            "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.11.4\\protobuf-java-3.11.4.jar"
+        ],
+        "out": "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\.bloop\\csgradebook",
+        "classesDir": "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\.bloop\\csgradebook\\scala-2.11\\classes",
+        "resources": [
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\src\\main\\resources",
+            "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\target\\scala-2.11\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.11.12",
+            "options": [
+                
+            ],
+            "jars": [
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12.jar",
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.11.12\\scala-compiler-2.11.12.jar",
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.11.12\\scala-reflect-2.11.12.jar",
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.11\\1.0.5\\scala-xml_2.11-1.0.5.jar",
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.11\\1.0.4\\scala-parser-combinators_2.11-1.0.4.jar",
+                "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jline\\jline\\2.14.3\\jline-2.14.3.jar"
+            ],
+            "analysis": "C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.11.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Java\\jdk-17.0.1",
+                "options": [
+                    "-Duser.dir=C:\\Users\\king\\Desktop\\BigDataModule\\LocalGit01\\CSGradeBook"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.11.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "mysql",
+                    "name": "mysql-connector-java",
+                    "version": "8.0.27",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "mysql-connector-java",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\mysql\\mysql-connector-java\\8.0.27\\mysql-connector-java-8.0.27.jar"
+                        },
+                        {
+                            "name": "mysql-connector-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\mysql\\mysql-connector-java\\8.0.27\\mysql-connector-java-8.0.27-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "3.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.11.4\\protobuf-java-3.11.4.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.11.4\\protobuf-java-3.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.11.12",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\king\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.11.12\\scala-library-2.11.12-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
