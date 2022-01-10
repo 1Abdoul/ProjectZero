@@ -1,0 +1,76 @@
+
+import java.sql.DriverManager
+import java.sql.Connection
+import java.util.Scanner
+
+/** A Scala JDBC connection example by Alvin Alexander,
+  * https://alvinalexander.com
+  */
+object CSgradeBook {
+
+  def main(args: Array[String]): Unit = {
+    // connect to the database named "mysql" on the localhost
+    val driver = "com.mysql.jdbc.Driver"
+    val url =
+      "jdbc:mysql://localhost:3306/gradebook" // Modify for whatever port you are running your DB on
+    val username = "root"
+    val password = "Spart@11" // Update to include your password
+    var sc = new Scanner(System.in)
+    var connection: Connection = null
+
+    try {
+      // make the connection
+      Class.forName(driver)
+      connection = DriverManager.getConnection(url, username, password)
+
+      // create the statement, and run the select query
+      val statement = connection.createStatement()
+
+      //John
+
+     
+      println("*****Wellcome to GradeBook***")
+      println("*****New Student registration***")
+      println("Enter student ID: ")
+      var studentid = sc.nextInt()
+      println("You've entered: "+ studentid);
+      println("Student lastname: ")
+      var lastname:String = sc.nextLine();
+      println("You've entered: "+ lastname)
+      println("Student firstname: ")
+      var firstname:String = sc.nextLine()
+      println("You've entered: "+ firstname)
+
+      println("Major: ");
+      var major:String = sc.nextLine();
+      println("AverageScore: ");
+      var averagescore = sc.nextDouble();
+
+      // create the statement, and run the select query
+
+      //val statement = connection.createStatement()
+      //statement.executeUpdate("UPDATE TABLE table1;")
+      // statement.executeUpdate("DELETE FROM table1 WHERE FullName = null");
+      // val john = statement.executeQuery("SELECT * FROM table1 WHERE FullName = 'John Connor'");
+      statement.executeUpdate(
+        "INSERT INTO students (StudentID, FirstName, LastName, Major, AverageScore) VALUES (" + studentid+ " ,  " + firstname+ " , lastname , major, averagescore );"
+      )
+
+      val resultSet = statement.executeQuery(
+        "SELECT * FROM students"
+      ) // Change query to your table
+      while (resultSet.next()) {
+        print(
+          resultSet.getString(1) + " " + resultSet.getString(
+            2
+          ) + " " + resultSet.getString(3)
+        )
+        println()
+      }
+    } catch {
+      case e: Exception => e.printStackTrace
+    }
+    connection.close()
+  }
+
+}
