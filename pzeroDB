@@ -1,0 +1,75 @@
+Project00
+
+1....//All CS students' grades
+
+select students.StudentID, students.FirstName, students.LastName, Major, assignments.AssignmentID, assignments.Subject, assignments.Score from Students
+inner join assignments ON Students.StudentID = assignments.StudentID having major = "CS";
+
+2....//Ranking students
+//3 highest scores in programing:
+
+select * from assignments
+where subject = "C++"
+order by score desc limit 0,3;
+
+3....//Each student average score
+
+select assignments.studentID, students.FirstName, students.LastName, AssignmentID, avg(score) as averagescore from assignments
+inner join  students ON Students.StudentID = assignments.StudentID
+group by students.studentID
+order by AverageScore desc
+
+
+Schema
+
+CREATE DATABASE BigData;
+USE BigData;
+DROP TABLE students;
+
+CREATE table Students (
+ StudentID int NOT NULL,
+ FirstName varchar(255),
+ LastName varchar(255),
+ Major varchar(255),
+ PRIMARY KEY (StudentID));
+ 
+ drop table Assignments;
+ Create table Assignments (
+ ID int primary key auto_increment,
+ studentID int NOT NULL,
+ AssignmentID int,
+ Subject varchar(30),
+ Score int,
+ Date date,
+ FOREIGN KEY (StudentID) REFERENCES Students(StudentID));
+
+ select studentID from students;
+
+select * from Students where Lastname = "Dipaola";
+select count(studentID) from students;
+
+select * from assignments
+where subject = "math"
+order by score desc limit 0,3;
+
+select students.StudentID, students.FirstName, students.LastName, Major, assignments.AssignmentID, assignments.Subject, assignments.Score from Students
+inner join assignments ON Students.StudentID = assignments.StudentID
+
+UPDATE students set major = "IT"where studentID = 2219;
+
+update assignments set Score = 90, Subject = "C++", AssignmentID = 6718, date = "2022-01-13" where studentID = 2219;
+
+select studentID from students where LastName = "Dipaola" 
+UNION
+SELECT Score from assignments;
+
+select students.StudentID, students.FirstName, students.LastName, Major, assignments.AssignmentID, assignments.Subject, assignments.Score from Students
+inner join assignments ON Students.StudentID = assignments.StudentID having major = "CS";
+
+
+
+select assignments.studentID, students.FirstName, students.LastName, AssignmentID, avg(score) as averagescore from assignments
+inner join  students ON Students.StudentID = assignments.StudentID
+group by students.studentID
+order by AverageScore desc
+
