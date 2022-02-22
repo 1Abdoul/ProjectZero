@@ -21,7 +21,7 @@ object GradeBook {
     val driver = "com.mysql.cj.jdbc.Driver"
     val url = "jdbc:mysql://localhost:3306/bigdata" // Modify for whatever port you are running your DB on
     val username = "root"
-    val password = "Spart@11" // Update to include your password
+    val password = "***" // Update to include your password
     val log = new PrintWriter(new File("query.log"))
    
     var connection:Connection = null
